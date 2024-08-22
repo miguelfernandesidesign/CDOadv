@@ -1,0 +1,5 @@
+User-agent: *
+Sitemap: https://cdo-advogada.pt/sitemap.xml
+
+Disallow: /dev
+Allow: *
