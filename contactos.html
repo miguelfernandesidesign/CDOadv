@@ -106,44 +106,46 @@
                         <h2 class="contact-title">Deixe uma mensagem<p style="font-weight: light; font-size: large;">Entramos em contacto</p></h2>
                     </div>
                     <div class="col-lg-8">
-                        <div class="form-contact">
+                        <div class="form-contact" action="https://formsubmit.co/d9df7d3bd15fc64b9034cbcf9124b7e1" method="POST">
                             <div class="row">
                                 <!-- sp -->
                                 <input type="text" name="_honey" style="display: none;">                               
                                 <!-- Captcha -->
                                 <input type="hidden" name="_captcha" value="false">
                                 <input type="hidden" name="_next" value="https://cdoadvogada.pt/enviado.html">
+                                
+                                <div style="display: none; visibility: hidden;">
+                                    <input type="text" name="job-role" autocomplete="off">
+                                </div>
+
                                 <div class="col-12 col-sm-5">
                                     <div class="form-group">
-                                        <input class="form-control" type="text" name="name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nome'" placeholder="Nome" autocomplete="off" id="name" required>
+                                        <input class="form-control" type="text" name="name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nome'" placeholder="Nome" required>
                                     </div>
                                 </div>
                                 <div class="col-12 col-sm-4">
                                     <div class="form-group">
-                                        <input class="form-control" type="email" name="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email'" placeholder="Email" autocomplete="off" id="email" required>
+                                        <input class="form-control" type="email" name="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email'" placeholder="Email" required>
                                     </div>
                                 </div>
                                 <div class="col-12 col-sm-3">
                                     <div class="form-group">
-                                        <input class="form-control" type="text" name="phone" onkeypress="return /[0-9]/i.test(event.key)" minlength="9" maxlength="14" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Telemóvel'" placeholder="Telemóvel" id="telephone" required>
-                                    </div>
-                                </div>
-                                <div class="col-12" style="display: none; visibility: hidden;">
-                                    <input type="text" name="job-role" autocomplete="off" id="job-role">
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-group">
-                                        <input class="form-control" type="text" name="subject" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Assunto'" placeholder="Assunto" id="subject">
+                                        <input class="form-control" type="text" name="phone" onkeypress="return /[0-9]/i.test(event.key)" minlength="9" maxlength="14" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Telemóvel'" placeholder="Telemóvel" required>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-group">
-                                        <textarea class="form-control w-100" name="message" cols="30" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Mensagem'" placeholder="Mensagem" id="message" required></textarea>
+                                        <input class="form-control" type="text" name="subject" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Assunto'" placeholder="Assunto">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <textarea class="form-control w-100" name="message" cols="30" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Mensagem'" placeholder="Mensagem" required></textarea>
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group mt-3">
-                                <button onclick="sendData()" class="button button-contactform boxed-btn">Enviar</button>
+                                <button type="submit" class="button button-contactform boxed-btn">Enviar</button>
                             </div>
                         </form>
                     </div>
