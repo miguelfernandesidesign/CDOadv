@@ -5,8 +5,7 @@ function enableSubmitBtn() {
     // Se o botão existe na página, habilite-o e aplique o estilo apropriado
     if (contactsButton) {
         contactsButton.disabled = false;
-        contactsButton.style.backgroundColor = "#007bff"; // Cor do botão habilitado
-        contactsButton.style.color = "#fff";              // Cor do texto habilitado
+        contactsButton.style.color = "#fff";
         contactsButton.style.cursor = "pointer";
         console.log('Botão habilitado:', contactsButton.id);
     } else {
