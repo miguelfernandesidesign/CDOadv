@@ -24,3 +24,10 @@
     color:#1d4024;
     border: 3px solid #1d4024;
 }
+
+/* Estilo do botão desabilitado */
+button#submitBtnContacts:disabled {
+    background-color: #5454549e;
+    color: #484747 !important;
+    cursor: not-allowed;
+}
