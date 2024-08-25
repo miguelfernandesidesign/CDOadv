@@ -1,11 +1,16 @@
-function enableSubmitBtn(enable) {
-    const submitBtn = document.getElementById('submitBtnContacts');
+function enableSubmitBtn() {
+    // Identifica o botão correto com base no contexto da página
+    const contactsButton = document.getElementById('submitBtnContacts');
 
-    if (enable) {
-        console.log('Habilitando o botão');
-        submitBtn.disabled = false;
+    // Se o botão existe na página, habilite-o e aplique o estilo apropriado
+    if (contactsButton) {
+        contactsButton.disabled = false;
+        contactsButton.style.backgroundColor = "#007bff"; // Cor do botão habilitado
+        contactsButton.style.color = "#fff";              // Cor do texto habilitado
+        contactsButton.style.cursor = "pointer";
+        console.log('Botão habilitado:', contactsButton.id);
     } else {
-        console.log('Desabilitando o botão');
-        submitBtn.disabled = true;
+        console.error('Botão não encontrado');
     }
 }
+
