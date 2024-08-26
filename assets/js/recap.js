@@ -13,20 +13,3 @@ function enableSubmitBtn() {
     }
 }
 
-// Função para mudar o botão para o estado de carregamento ao clicar
-function handleButtonClick() {
-    $('#submitBtnContacts').on('click', function() {
-        var $this = $(this);
-        var originalText = $this.html();
-        
-        // Muda o botão para o estado de carregamento
-        $this.html("<i class='fas fa-spinner fa-spin'></i> A enviar ..."); 
-        $this.prop('disabled', true); // Desativa o botão enquanto está processando
-    });
-}
-
-// Chama as funções após o DOM estar carregado
-$(document).ready(function() {
-    enableSubmitBtn();
-    handleButtonClick();
-});
