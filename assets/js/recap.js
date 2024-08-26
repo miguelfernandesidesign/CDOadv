@@ -24,3 +24,9 @@ function handleButtonClick() {
         $this.prop('disabled', true); // Desativa o botão enquanto está processando
     });
 }
+
+// Chama as funções após o DOM estar carregado
+$(document).ready(function() {
+    enableSubmitBtn();
+    handleButtonClick();
+});
